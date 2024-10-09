@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMART PTLI-Shop</title>
+    <!--SHOP INTERFACE ALL-->
+    <link rel="stylesheet" href="SMARTPTLI(Shop).css">
+    <link rel="stylesheet" href="HEADER.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body style="background-color:#eff0f5;">
+    <header>
+        <nav class="navbar">
+            <div class="navdiv">
+                <!-- Logo Section -->
+                <div class="logo"><img src="ICON.png" alt="Logo"></div>
+    
+                <!-- Navigation Links Section -->
+                <div class="container">
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="SMARTPTLI(EduLevel).html">Education Level</a></li>
+                        <li><a href="SMARTPTLI(ClassSchedule).html">Class Schedule</a></li>
+                        <li><a href="SMARTPTLI(ContactUs).html">Contact Us</a></li>
+                        <li><a href="SMARTPTLI(Shop).html">Shop</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Cart Icon Section -->
+                <div class="iconCart">
+                    <a href="#"><i class='bx bx-cart'></i></a>
+                    <div class="totalQuantity">0</div> <!-- Cart Quantity Indicator -->
+                </div>
+    
+                <!-- Auth Buttons Section -->
+                <div class="auth-buttons">
+                    <button class="border-button"><a href="/MyWebsite 2.0/Login/!signup.php">Sign Up</a></button>
+                    <button class="border-button"><a href="/MyWebsite 2.0/Login/!login.php">Log In</a></button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+
+    <div class="listProduct">
+        <div class="item">
+            <img src="GAMBAR DUMMY/1 SK OFFLINE.png" alt="" srcset="">
+            <h2>1 SUBJEK</h2>
+            <div class="price">RM75</div>
+            <button>Add To Cart</button>
+        </div>
+    </div>
+
+    <div class="cart">
+        <h2>CART</h2>
+        <div class="listCart">
+            <div class="item">
+                <img src="GAMBAR DUMMY/1 SK OFFLINE.png">
+                <div class="content">
+                    <div class="name">Product Name</div>
+                    <div class="price">RM75/1 product</div>
+                    <div class="quantity">
+                        <button>-</button>
+                        <span class="value">3</span>
+                        <button>+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <div class="close">CLOSE</div>
+            <div class="checkout">
+                <a href="checkout.html"></a> CHECKOUT
+            </div>
+        </div>
+    </div>
+
+    <script src="cart.js"></script>
+
+
+</body>
+
+</html>

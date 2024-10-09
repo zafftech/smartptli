@@ -1,0 +1,410 @@
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+
+
+        /* Header Styles */
+        header {
+            background-color: #ffffff;
+            padding: 10px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 100%;
+        }
+
+        .navbar {
+            background: #ffffff;
+            font-family: Calibri, sans-serif;
+        }
+
+        .navdiv {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1170px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        .logo {
+            flex: 1;
+            /* Keep the logo on the left */
+        }
+
+        .logo img {
+            width: 180px;
+            height: 85px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+            margin: 0;
+            padding: 0;
+            flex: 2;
+            /* Center the navigation links */
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            display: inline-block;
+        }
+
+        nav ul li a {
+            color: #333;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .auth-buttons {
+            display: flex;
+            gap: 10px;
+            flex: 1;
+            /* Align the buttons to the right */
+            justify-content: flex-end;
+        }
+
+        .border-button {
+            border: none;
+            background-color: #d9aa28;
+            border-radius: 20px;
+            padding: 10px;
+            width: 70px;
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        .border-button a {
+            color: black;
+            font-weight: lighter;
+            font-size: 15px;
+        }
+
+        .auth-buttons .sign-up {
+            background-color: #f39c12;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        .auth-buttons .log-in {
+            background-color: #2980b9;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.5s ease;
+        }
+
+        .iconCart {
+            position: relative;
+            /* Set position to relative to position the totalQuantity correctly */
+            display: flex;
+            align-items: center;
+            /* Vertically centers the cart icon and quantity */
+        }
+
+        .totalQuantity {
+            position: absolute;
+            top: 0;
+            right: 0;
+            /* Adjust these values to place the totalQuantity next to the icon */
+            background-color: red;
+            /* Change color to your preference */
+            color: white;
+            border-radius: 50%;
+            padding: 2px 6px;
+            font-size: 12px;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        /* Product Grid */
+        .listProduct {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            /* 3 products per line */
+            gap: 20px;
+            padding: 20px;
+        }
+
+
+
+        /* Individual Product Container */
+        .item {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            position: relative;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .item:hover {
+            transform: translateY(-5px);
+            /* Slight hover effect */
+        }
+
+        /* Product Image */
+        .item img {
+            width: 100%;
+            /* Ensure image takes full width of container */
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Product Details */
+        .item h2 {
+            font-size: 1.5rem;
+            margin: 10px 0;
+        }
+
+        .item h3 {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-size: 1.2rem;
+            color: green;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        /* Button Styling */
+        .item button {
+            background-color: #d9aa28;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            white-space: nowrap;
+            /* Prevents text from wrapping */
+            width: 100%;
+            /* Ensures the button spans the full width of the container */
+            text-align: center;
+            /* Aligns text to the center */
+        }
+
+        .item button:hover {
+            background-color: #b3881d;
+        }
+
+        /* Cart Styles */
+        .cart {
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            right: 0;
+            /* Adjusted to show on screen */
+            width: 300px;
+            /* Adjust width as necessary */
+            height: 100%;
+            /* Full height */
+            overflow-y: auto;
+            /* Scrollable */
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .listCart {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .listCart .item {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .listCart .item img {
+            width: 80px;
+            height: auto;
+        }
+
+        .listCart .content {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .quantity {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .quantity button {
+            padding: 5px 10px;
+            border: none;
+            background-color: #d9aa28;
+            color: white;
+            cursor: pointer;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .checkout {
+            background-color: #e6572c;
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .close {
+            background-color: #d9aa28;
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        /* Footer Styles */
+        .footer {
+            background-color: white;
+            width: 100%;
+            padding: 40px 0;
+            /* Increased padding to make the footer taller */
+            position: relative;
+            /* Ensure the footer content stacks above the bottom bar */
+        }
+
+        .footer .container {
+            max-width: 1170px;
+            margin: 0 auto;
+            /* Center the footer */
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            /* Align the columns side by side */
+        }
+
+        footer .footer-col {
+            flex: 1;
+            /* Make each column equal width */
+            padding: 0 15px;
+        }
+
+        footer .footer-col h4 {
+            font-size: 18px;
+            color: black;
+            text-transform: capitalize;
+            margin-bottom: 15px;
+            font-weight: 500;
+            position: relative;
+        }
+
+        footer .footer-col h4::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            background-color: black;
+            height: 2px;
+            width: 50px;
+        }
+
+        footer .footer-col ul {
+            list-style: none;
+            padding-left: 0;
+            /* Remove default padding */
+        }
+
+        footer .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        footer .footer-col ul li a {
+            font-size: 16px;
+            text-transform: capitalize;
+            color: black;
+            font-weight: 300;
+            display: block;
+            transition: 0.3s ease;
+        }
+
+        footer .footer-col ul li a:hover {
+            padding-left: 10px;
+            color: #ff6600;
+        }
+
+        /* Bottom Bar */
+        .bottom-bar {
+            background: #987a7a;
+            text-align: center;
+            padding: 15px 0;
+            /* Adjust padding for height */
+            width: 100%;
+            position: relative;
+            /* Sticks the bottom bar directly below the footer */
+            margin-top: 20px;
+            /* Added margin to create space between footer content and bottom bar */
+        }
+
+        .bottom-bar p {
+            color: white;
+            margin: 0;
+            font-size: 16px;
+            padding: 7px;
+        }
+
+        /* Responsive Styles */
+        @media(max-width: 767px) {
+            footer .footer-content {
+                flex-direction: column;
+            }
+
+            footer .footer-col {
+                width: 100%;
+                margin-bottom: 30px;
+            }
+        }
+
+        @media(max-width: 574px) {
+            footer .footer-col {
+                width: 100%;
+                margin-bottom: 30px;
+            }
+        }

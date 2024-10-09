@@ -1,0 +1,303 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&family=Poppins:wght@400;500;600&display=swap");
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Container for Alignment */
+.container {
+    max-width: 1170px;
+    /* Adjust the max-width as needed */
+    margin: 0 auto;
+    /* Center the container */
+    padding: 0 15px;
+    /* Add some padding for mobile devices */
+}
+
+/* Header Styles */
+header {
+    background-color: #ffffff;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.navbar {
+    background: #ffffff;
+    font-family: Calibri, sans-serif;
+}
+
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.logo {
+    flex: 1;
+    /* Keep the logo on the left */
+}
+
+.logo img {
+    width: 180px;
+    height: 85px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+    flex: 2;
+    /* Center the navigation links */
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+nav ul li a {
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+    flex: 1;
+    /* Align the buttons to the right */
+    justify-content: flex-end;
+}
+
+.border-button {
+    border: none;
+    background-color: #d9aa28;
+    border-radius: 20px;
+    padding: 10px;
+    width: 70px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.border-button a {
+    color: black;
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+.auth-buttons .sign-up {
+    background-color: #f39c12;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.auth-buttons .log-in {
+    background-color: #2980b9;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.iconCart {
+    position: relative;
+    /* Set position to relative to position the totalQuantity correctly */
+    display: flex;
+    align-items: center;
+    /* Vertically centers the cart icon and quantity */
+}
+
+.totalQuantity {
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* Adjust these values to place the totalQuantity next to the icon */
+    background-color: red;
+    /* Change color to your preference */
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Profile Container Styling */
+.profile-container {
+    background-color: white;
+    max-width: 400px;
+    margin: 50px auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+}
+
+/* Profile Picture */
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 3px solid #ddd; /* Border around the profile picture */
+}
+
+/* Display Name Styling */
+h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Button Styling */
+.btn-primary {
+    background-color: #fc4a1a;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 25px;
+    font-weight: bold;
+    color: white;
+    margin-right: 10px;
+}
+
+.btn-warning {
+    background-color: #f7b733;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 25px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Button Hover Effect */
+.btn-primary:hover {
+    background-color: #f03e0f;
+}
+
+.btn-warning:hover {
+    background-color: #e1a626;
+}
+
+/* Box Shadow for the Section */
+.shadow {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Spacing between Buttons */
+a + a {
+    margin-left: 10px;
+}
+
+/* Vertical alignment fix */
+.vh-50 {
+    min-height: 60vh; /* Ensure minimum height for vertical centering */
+}
+
+body {
+    background-color: #eff0f5; /* Keep the background light gray */
+}
+
+/* Logout Button Styling */
+.logout-btn {
+    background-color: #d9aa28; /* Updated color */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 50px;
+    width: 150px; /* Reduced width */
+    text-align: center; /* Ensure text is centered */
+}
+
+.logout-btn:hover {
+    background-color: #c49422; /* Hover effect with a darker shade */
+}
+
+
+/* Hero Section */
+.hero {
+    background: #d9aa28;
+}
+
+.hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 95vh;
+    padding: 3rem calc((100vw - 1300px) / 2);
+}
+
+.column-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #000;
+    padding: 0rem 2rem;
+}
+
+.column-left p {
+    margin-bottom: 1.5rem;
+    /* Adjusted for tighter space */
+    font-size: 2rem;
+    line-height: 1.5;
+    font-family: Calibri, sans-serif;
+}
+.logout a {
+    background-color: #ff6b6b; /* Background color for the button */
+    color: #fff; /* Text color */
+    padding: 10px 20px; /* Padding for the button */
+    text-decoration: none; /* Remove underline from the link */
+    border: none; /* Remove any borders */
+    border-radius: 5px; /* Add rounded corners */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.logout a:hover {
+    background-color: #e60000; /* Darker red when hovering */
+    color: #fff; /* Ensure text remains white on hover */
+}
+
+
+/* Responsive Styles */
+@media(max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 574px) {
+    .footer-col {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}

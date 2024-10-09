@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+body {
+    background-color: #c9d6ff;
+    background: linear-gradient(to right, #fee8d6, #fee8b1);
+    margin: 0;
+    position: relative;
+}
+
+.container {
+    background: #fff;
+    width: 500px;
+    height: 800px;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 20px 35px rgba(0, 0, 1, 0.9);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 10%);
+}
+
+form {
+    margin: 0 2rem;
+}
+
+.form-title {
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 1.3rem;
+    margin-bottom: 0.4rem;
+}
+
+input {
+    color: inherit;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #757575;
+    padding-left: 1.5rem;
+    font-size: 15px;
+}
+
+.input-group {
+    padding: 1% 0;
+    position: relative;
+    margin-bottom: 10px;
+
+}
+
+.input-group i {
+    position: absolute;
+    color: black;
+
+}
+
+input:focus {
+    background-color: transparent;
+    outline: transparent;
+    border-bottom: 2px solid hsl(327, 90%, 28%);
+}
+
+input::placeholder {
+    color: transparent;
+}
+
+label {
+    color: #757575;
+    position: relative;
+    left: 1.2em;
+    top: -1.3em;
+    cursor: auto;
+    transition: 0.3s ease all;
+}
+
+input:focus~label,
+input:not(:placeholder-shown)~label {
+    top: -2.7em;
+    /* Increased from -3em to -3.5em for more space */
+    color: hsl(327, 90%, 28%);
+    font-size: 15px;
+}
+
+.recover {
+    text-align: right;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+.recover a {
+    text-decoration: none;
+    color: #f39c12;
+}
+
+.recover a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.btn {
+    font-size: 1.1rem;
+    padding: 8px 0;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    width: 100%;
+    background: #f39c12;
+    color: white;
+    cursor: pointer;
+    transition: 0.9s;
+}
+
+.btn:hover {
+    background: #07001f;
+}
+
+.or {
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+.icons {
+    text-align: center;
+}
+
+.icons i {
+    color: rgb(125, 125, 235);
+    padding: 0.8rem 1.5rem;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: 2px solid #dfe9f5;
+    margin: 0 15px;
+    transition: 1s;
+}
+
+.icons i:hover {
+    background: #07001f;
+    font-size: 1.6rem;
+    border: 2px solid rgb(125, 125, 235);
+}
+
+.links {
+    color: #000000;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 4rem;
+    margin-top: 0.9rem;
+    font-weight: bold;
+}
+
+button {
+    color: #f39c12;
+    border: none;
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/*
+button:hover {
+    text-decoration: underline;
+    color: blue;
+}*/
+
+button #signInButton {
+    background-color: transparent;
+    /* Make the background transparent */
+    border: none;
+    /* Remove the border */
+    color: black;
+    /* Change the text color */
+    font-size: 16px;
+    /* Adjust the font size */
+    cursor: pointer;
+    /* Add a pointer cursor */
+    text-decoration: underline;
+    /* Optional: Underline to make it look like a link */
+    padding: 0;
+    /* Remove default padding */
+}
+
+button#signUpButton:hover {
+    text-decoration: none;
+    /* Optional: Remove underline on hover */
+    color: black;
+    /* Optional: Change color on hover */
+}
+
+button #signUpButton {
+    background-color: transparent;
+    /* Make the background transparent */
+    border: none;
+    /* Remove the border */
+    color: black;
+    /* Change the text color */
+    font-size: 16px;
+    /* Adjust the font size */
+    cursor: pointer;
+    /* Add a pointer cursor */
+    text-decoration: underline;
+    /* Optional: Underline to make it look like a link */
+    padding: 0;
+    /* Remove default padding */
+}
+
+button#signInButton:hover {
+    text-decoration: none;
+    /* Optional: Remove underline on hover */
+    color: black;
+    /* Optional: Change color on hover */
+}

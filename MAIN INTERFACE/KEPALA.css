@@ -1,0 +1,164 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Calibri, sans-serif; /* Consistent font family */
+}
+
+body, .container {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px; /* Padding for mobile devices */
+}
+
+/* Header Styles */
+header {
+    background-color: #ffffff;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.navbar {
+    background: #ffffff;
+    font-family: Calibri, sans-serif;
+}
+
+/* Flexbox for aligning logo, navigation links, and buttons */
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Logo on the left */
+.logo {
+    flex: 1;
+}
+
+/* Logo Image size */
+.logo img {
+    width: 180px;
+    height: 85px;
+}
+
+/* Navigation Links (center aligned) */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+    flex: 2;
+    justify-content: center;
+}
+
+.nav-links li {
+    list-style: none;
+    display: inline-block;
+}
+
+.nav-links li a {
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Cart Icon Section (aligned near buttons) */
+.iconCart {
+    visibility: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+/* Cart Icon */
+.iconCart i {
+    font-size: 24px;
+}
+
+/* Cart Quantity Indicator (positioned above the cart icon) */
+.totalQuantity {
+    top: -10px;
+    right: -10px;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    font-size: 12px;
+}
+
+/* Auth Buttons (aligned to the right) */
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end; /* Pushes the buttons to the right */
+}
+
+/* Sign Up and Log In buttons */
+.border-button {
+    border: none;
+    background-color: #d9aa28;
+    border-radius: 20px;
+    padding: 10px;
+    width: 70px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.border-button a {
+    color: black;
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+/* Specific styling for the Sign Up button */
+.auth-buttons .sign-up {
+    background-color: #f39c12;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Specific styling for the Log In button */
+.auth-buttons .log-in {
+    background-color: #2980b9;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Responsive design for footer elements */
+@media (max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 574px) {
+    .footer-col {
+        width: 190%;
+        margin-bottom: 30px;
+    }
+}

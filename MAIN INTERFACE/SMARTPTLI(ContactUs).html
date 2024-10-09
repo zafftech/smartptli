@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMART PTLI-Contact Us</title>
+    <link rel="stylesheet" href="SMARTPTLI(ContactUs).css">
+    <link rel="stylesheet" href="HEADER.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navdiv">
+                <!-- Logo Section -->
+                <div class="logo"><img src="ICON.png" alt="Logo"></div>
+    
+                <!-- Navigation Links Section -->
+                <div class="container">
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="SMARTPTLI(EduLevel).html">Education Level</a></li>
+                        <li><a href="SMARTPTLI(ClassSchedule).html">Class Schedule</a></li>
+                        <li><a href="SMARTPTLI(ContactUs).html">Contact Us</a></li>
+                        <li><a href="SMARTPTLI(Shop).html">Shop</a></li>
+                    </ul>
+                </div>
+
+                                <!-- Cart Icon Section -->
+                                <div class="iconCart">
+                                    <li><a href="#"><i class='bx bx-cart'></i></a></li>
+                                    <div class="totalQuantity">0</div> <!-- Cart Quantity Indicator -->
+                                </div>
+                    
+
+    
+                <!-- Auth Buttons Section -->
+                <div class="auth-buttons">
+                    <button class="border-button"><a href="/MyWebsite 2.0/Login/!signup.php">Sign Up</a></button>
+                    <button class="border-button"><a href="/MyWebsite 2.0/Login/!login.php">Log In</a></button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+        <div class="contact-container">
+        <div class="contact-header">
+            <img src="ICON.png" alt="Pusat Tuisyen Lonjakan Ilmu">
+            <p><i class="fa fa-map-marker"></i> 13-1F, Pinggiran Mutiara Utama, Mutiara Gombak 1, 53100 Kuala Lumpur, Selangor.</p>
+            <p><i class="fa fa-phone"></i> +6010-285 5532</p>
+            <p><i class="fa fa-envelope"></i> pusattuisyenlonjakanilmu@gmail.com</p>
+        </div>
+        
+        <div class="enquiry-form">
+            <h2>Submit Enquiry</h2>
+            <form id="enquiryForm" method="post" action="submit_enquiry.php">
+                <input type="text" id="fullName" name="fullName" placeholder="Full Name" required>
+                <input type="text" id="mobileNo" name="mobileNo" placeholder="Mobile No" required>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <textarea id="message" name="message" placeholder="Message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        
+        
+    </div>
+
+    <script>
+        document.getElementById("enquiryForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent the form from submitting the traditional way
+
+    // Fetch form data
+    let fullName = document.getElementById("fullName").value;
+    let mobileNo = document.getElementById("mobileNo").value;
+    let email = document.getElementById("email").value;
+    let message = document.getElementById("message").value;
+
+    // Basic form validation
+    if (fullName && mobileNo && email && message) {
+        // Use AJAX to submit the form data
+        let xhr = new XMLHttpRequest();
+        xhr.open("POST", "submit_enquiry.php", true);
+        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+        
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                // Show a confirmation message
+                alert("Thank you for your enquiry, " + fullName + "! We will get back to you soon.");
+                
+                // Optionally clear the form fields after successful submission
+                document.getElementById("enquiryForm").reset();
+            }
+        };
+        
+        // Send the form data
+        let formData = "fullName=" + encodeURIComponent(fullName) +
+                       "&mobileNo=" + encodeURIComponent(mobileNo) +
+                       "&email=" + encodeURIComponent(email) +
+                       "&message=" + encodeURIComponent(message);
+        
+        xhr.send(formData);
+    } else {
+        alert("Please fill in all the required fields.");
+    }
+});
+
+    </script>
+    
+    </script>
+
+
+        <!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>Pusat Tuisyen Lonjakan Ilmu</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li> <br>
+                    <li><a href="SMARTPTLI(EduLevel).html">Education Level</a></li> <br>
+                    <li><a href="SMARTPTLI(ClassSchedule).html">Class Schedule</a></li> <br>
+                    <li><a href="SMARTPTLI(ContactUs).html">Contact Us</a></li> 
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Class Schedule</h4>
+                <ul>
+                    <li><a href="SMARTPTLI(ClassSchedule).html">Physical Class</a></li> <br>
+                    <li><a href="SMARTPTLI(ClassSchedule).html">Online Class</a></li> <br>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Account</h4>
+                <ul>
+                    <li><a href="SMARTPTLI(ContactUs).html">Support</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-bar">
+        <p>&copy;2024 Pusat Tuisyen Lonjakan Ilmu. All rights reserved</p>
+    </div>
+</footer>
+</body>
+</html>

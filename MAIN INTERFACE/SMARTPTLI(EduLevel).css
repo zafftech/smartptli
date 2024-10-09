@@ -1,0 +1,356 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Container for Alignment */
+.container {
+    max-width: 1170px;
+    /* Adjust the max-width as needed */
+    margin: 0 auto;
+    /* Center the container */
+    padding: 0 15px;
+    /* Add some padding for mobile devices */
+}
+
+/* Header Styles */
+header {
+    background-color: #ffffff;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.navbar {
+    background: #ffffff;
+    font-family: Calibri, sans-serif;
+}
+
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.logo {
+    flex: 1;
+    /* Keep the logo on the left */
+}
+
+.logo img {
+    width: 180px;
+    height: 85px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+    flex: 2;
+    /* Center the navigation links */
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+nav ul li a {
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+    flex: 1;
+    /* Align the buttons to the right */
+    justify-content: flex-end;
+}
+
+.border-button {
+    border: none;
+    background-color: #d9aa28;
+    border-radius: 20px;
+    padding: 10px;
+    width: 70px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.border-button a {
+    color: black;
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+.auth-buttons .sign-up {
+    background-color: #f39c12;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.auth-buttons .log-in {
+    background-color: #2980b9;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.iconCart {
+    position: relative;
+    /* Set position to relative to position the totalQuantity correctly */
+    display: flex;
+    align-items: center;
+    /* Vertically centers the cart icon and quantity */
+    opacity: 0;
+}
+
+.totalQuantity {
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* Adjust these values to place the totalQuantity next to the icon */
+    background-color: red;
+    /* Change color to your preference */
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*content*/
+/* Performance Card Styles */
+.performance-card {
+    max-width: 650px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    color: #333;
+    margin: 5px auto;
+    /* Center the card and add some margin */
+}
+
+.performance-card h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #1f1f1f;
+}
+
+.performance-stats {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.performance-stats li {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+    font-size: 14px;
+}
+
+.performance-stats span:last-child {
+    font-weight: 600;
+    color: #1f1f1f;
+}
+
+.performance-summary {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 8px;
+    background: #FFDBBB;
+    /* Light purple background */
+    border-left: 3px solid #ff9248;
+    /* Purple border for emphasis */
+}
+
+.performance-summary .icon {
+    margin-right: 8px;
+    font-size: 20px;
+    color: #a58aff;
+    /* Purple color matching the border */
+}
+
+.performance-summary p {
+    font-size: 13px;
+    color: #333;
+    line-height: 1.4;
+}
+
+/* Grid Container for Education Levels */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columns */
+    gap: 20px;
+    /* Space between cards */
+    padding: 20px;
+}
+
+/* Performance Card Styling */
+.performance-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /*text-align: left;*/
+}
+
+/* Headings and Text Styling */
+.performance-card h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.performance-summary p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        /* Stacks cards on smaller screens */
+    }
+}
+
+
+/* Footer Styles */
+.footer {
+    background-color: white;
+    width: 100%;
+    padding: 40px 0;
+    /* Increased padding to make the footer taller */
+    position: relative;
+    /* Ensure the footer content stacks above the bottom bar */
+    margin-top: 40px;
+    /* Added margin to create space above the footer */
+}
+
+.footer .container {
+    max-width: 1170px;
+    margin: 0 auto;
+    /* Center the footer */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    /* Align the columns side by side */
+}
+
+.footer-col {
+    flex: 1;
+    /* Make each column equal width */
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: black;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: black;
+    height: 2px;
+    width: 50px;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding-left: 0;
+    /* Remove default padding */
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: black;
+    font-weight: 300;
+    display: block;
+    transition: 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    padding-left: 10px;
+    color: #1abc9c;
+}
+
+/* Bottom Bar */
+.bottom-bar {
+    background: #987a7a;
+    text-align: center;
+    padding: 15px 0;
+    /* Adjust padding for height */
+    width: 100%;
+    position: relative;
+    /* Sticks the bottom bar directly below the footer */
+    margin-top: 20px;
+    /* Added margin to create space between footer content and bottom bar */
+}
+
+.bottom-bar p {
+    color: white;
+    margin: 0;
+    font-size: 16px;
+    padding: 7px;
+}
+
+/* Responsive Styles */
+@media(max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 574px) {
+    .footer-col {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}

@@ -1,0 +1,230 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Calibri, sans-serif; /* Consistent font family */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Container for Alignment */
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header Styles */
+header {
+    background-color: #ffffff;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.navbar {
+    background: #ffffff;
+    font-family: Calibri, sans-serif;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+/* Adjust the .navdiv styling */
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 100%;
+}
+
+/* Adjust the .logo styling */
+.logo {
+    flex-shrink: 0; /* Prevents the logo from shrinking */
+    margin-right: auto; /* Aligns the logo to the left */
+}
+
+.logo img {
+    width: 180px;
+    height: 85px;
+}
+
+/* Center the navigation links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+nav ul li a {
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Auth Buttons (aligned to the right) */
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.border-button {
+    border: none;
+    background-color: #d9aa28;
+    border-radius: 20px;
+    padding: 10px;
+    width: 70px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.border-button a {
+    color: black;
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+/* This is header */
+* {
+    text-decoration: none;
+}
+
+.navbar {
+    background: #ffffff;
+    font-family: calibri;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo a {
+    display: inline-block;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+li a {
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 25px;
+    text-decoration: none; /* Remove underline */
+}
+
+/* Example hover effect for navbar links */
+.navbar ul li a:hover {
+    color: #ff6600;
+    text-decoration: none; /* Ensure underline is still removed on hover */
+}
+
+/* Hover effect for the buttons */
+.border-button a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hover effect for footer links */
+.footer-col ul li a:hover {
+    color: #ff6600;
+}
+
+button {
+    background-color: #d9aa28;
+    margin-left: 10px;
+    border-radius: 20px;
+    padding: 10px;
+    width: 60px;
+    text-align: center;
+}
+
+button a {
+    color: black;
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+.logo img {
+    width: 180px;
+    height: 85px;
+}
+
+li:nth-child(5) {
+    display: inline-block;
+}
+
+.border-button {
+    border: none;
+}
+
+.custom-btn {
+    background-color: #f39c12;
+    border-color: #f39c12;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.custom-btn:hover {
+    background-color: #e67e22;
+    border-color: #e67e22;
+    color: white;
+}
+
+.logout a {
+    background-color: #f39c12; /* Matches the yellow-orange color */
+    color: white; /* White text */
+    padding: 10px 15px; /* Adjusted padding to ensure the text fits in one line */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+    display: inline-block; /* Ensures it stays in one line */
+    white-space: nowrap; /* Prevents the text from breaking into multiple lines */
+}
+
+.logout a:hover {
+    background-color: #e67e22; /* Darker shade on hover */
+}
+
+
+/* Responsive */
+@media(max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 574px) {
+    .footer-col {
+        width: 190%;
+        margin-bottom: 30px;
+    }
+}

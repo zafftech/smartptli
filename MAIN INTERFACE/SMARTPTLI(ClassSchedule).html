@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMART PTLI-Class Schedule</title>
+    <link rel="stylesheet" href="SMARTPTLI(ClassSchedule).css">
+    <link rel="stylesheet" href="HEADER.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navdiv">
+                <!-- Logo Section -->
+                <div class="logo"><img src="ICON.png" alt="Logo"></div>
+    
+                <!-- Navigation Links Section -->
+                <div class="container">
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="SMARTPTLI(EduLevel).html">Education Level</a></li>
+                        <li><a href="SMARTPTLI(ClassSchedule).html">Class Schedule</a></li>
+                        <li><a href="SMARTPTLI(ContactUs).html">Contact Us</a></li>
+                        <li><a href="SMARTPTLI(Shop).html">Shop</a></li>
+                    </ul>
+                </div>
+                <!-- Cart Icon Section -->
+                <div class="iconCart">
+                    <li><a href="#"><i class='bx bx-cart'></i></a></li>
+                    <div class="totalQuantity">0</div> <!-- Cart Quantity Indicator -->
+                </div>
+    
+    
+                <!-- Auth Buttons Section -->
+                <div class="auth-buttons">
+                    <button class="border-button"><a href="/MyWebsite 2.0/Login/!signup.php">Sign Up</a></button>
+                    <button class="border-button"><a href="/MyWebsite 2.0/Login/!login.php">Log In</a></button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Main Content Section Start -->
+    <main>
+        <section class="schedule">
+            <!-- Physical Class Schedule Start -->
+            <div class="schedule-item">
+                <div class="schedule-info">
+                    <h2>Physical Class Schedule</h2>
+                    <div class="schedule-info">
+                        <h2>Iqra Class</h2>
+
+                        <div class="schedule-item">
+                            <div class="schedule-item">
+                                <img src="JADUAL/IQRA.png" alt="Physical Class Schedule">
+
+                            </div>
+                            <div class="schedule-info">
+                                <h2>Primary School Class</h2>
+                            </div>
+                            <img src="JADUAL/SK F2F.png" alt="Physical Class Schedule">
+
+                        </div>
+                        <div class="schedule-item">
+                            <div class="schedule-info">
+                                <h2>Secondary School Class</h2>
+                            </div>
+                            <img src="JADUAL/SMK F2F.png" alt="Physical Class Schedule">
+                        </div>
+                        <div class="schedule-item">
+                            <div class="schedule-info">
+                                <h2>SPM Class</h2>
+                            </div>
+                            <img src="JADUAL/SPM F2F.png" alt="Physical Class Schedule">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Physical Class Schedule End -->
+
+
+            <!-- Online Class Schedule Start -->
+            <div class="schedule-item">
+                <div class="schedule-info">
+                    <h2>Online Class Schedule</h2>
+
+                    <div class="schedule-item">
+                        <div class="schedule-info">
+                            <h2>UPKK Class</h2>
+                        </div>
+                        <img src="JADUAL/UPKK.png" alt="Physical Class Schedule">
+                    </div>
+
+                    <div class="schedule-item">
+                        <div class="schedule-info">
+                            <h2>Primary School Class</h2>
+                        </div>
+                        <img src="JADUAL/SK ONLINE.png" alt="Physical Class Schedule">
+                    </div>
+                    <div class="schedule-item">
+                        <div class="schedule-info">
+                            <h2>Secondary School Class</h2>
+                        </div>
+                        <img src="JADUAL/SMK ONLINE.png" alt="Physical Class Schedule">
+                    </div>
+                    <div class="schedule-item">
+                        <div class="schedule-info">
+                            <h2>SPM Class </h2>
+                        </div>
+                        <img src="JADUAL/SPM ONLINE.png" alt="Physical Class Schedule">
+                    </div>
+                </div>
+            </div>
+            <!-- Online Class Schedule End -->
+        </section>
+    </main>
+    <!-- Main Content Section End -->
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>Pusat Tuisyen Lonjakan Ilmu</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li> <br>
+                        <li><a href="SMARTPTLI(EduLevel).html">Education Level</a></li> <br>
+                        <li><a href="SMARTPTLI(ClassSchedule).html">Class Schedule</a></li> <br>
+                        <li><a href="SMARTPTLI(ContactUs).html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Class Schedule</h4>
+                    <ul>
+                        <li><a href="SMARTPTLI(ClassSchedule).html">Physical Class</a></li> <br>
+                        <li><a href="SMARTPTLI(ClassSchedule).html">Online Class</a></li> <br>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Account</h4>
+                    <ul>
+                        <li><a href="SMARTPTLI(ContactUs).html">Support</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <p>&copy;2024 Pusat Tuisyen Lonjakan Ilmu. All rights reserved</p>
+        </div>
+    </footer>
+    <!-- Add this after the footer, before the closing body tag -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="imgInModal">
+        <div id="caption"></div>
+    </div>
+    <script>
+        // Get the modal
+        var modal = document.getElementById("imageModal");
+
+        // Get the modal image and caption
+        var modalImg = document.getElementById("imgInModal");
+        var captionText = document.getElementById("caption");
+
+        // Attach click event to each image to open the modal
+        var images = document.querySelectorAll('img');
+        images.forEach(function (image) {
+            image.onclick = function () {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+        });
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>

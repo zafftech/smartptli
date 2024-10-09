@@ -1,0 +1,132 @@
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.round {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: relative;
+    background: red;
+    display: inline-block;
+    padding: 0.3rem 0.2rem !important;
+    margin: 0.3rem 0.2rem !important;
+    left: -18px;
+    top: 20px;
+    z-index: 99 !important;
+}
+
+.round > span {
+    color: white;
+    display: block;
+    text-align: center;
+    font-size: 0.75rem !important;
+    padding: 0 !important;
+    position: absolute; /* Use absolute positioning */
+    top: 70%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%) translateY(-2px); /* Adjust vertical position */
+}
+
+#list {
+    display: none;
+    position: absolute;
+    right: 2%;
+    background: #ffffff;
+    z-index: 100 !important;
+    width: 22vw;
+    padding: 0 !important; /* Remove padding */
+    margin: 0 !important; /* Remove margin */
+}
+
+.message > span {
+    width: 100%;
+    display: block;
+    color: red;
+    text-align: justify;
+    margin: 0.2rem 0.3rem !important;
+    padding: 0.3rem !important;
+    line-height: 1rem !important;
+    font-weight: bold;
+    border-bottom: 1px solid white;
+    font-size: 1.8rem !important;
+}
+
+.message > .msg {
+    width: 100%;
+    margin: 0.2rem 0.3rem !important;
+    padding: 0.2rem 0.2rem !important;
+    text-align: justify;
+    font-weight: bold;
+    display: block;
+    word-wrap: break-word;
+}
+
+.bell-icon {
+    font-size: 32px;
+    color: black !important; /* Ensure this rule isn't overridden */
+    margin: 0.5rem 0.4rem;
+}
+
+/* Notification Popup Style */
+.notification-popup {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 350px;
+    height: 350px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: none;
+    max-height: 500px;
+    overflow-y: auto;
+    padding: 0px; /* Remove extra padding inside the popup */
+}
+
+/* Adjust notification header to remove any margin */
+.notification-header {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    font-weight: bold;
+    margin: 0; /* Remove bottom margin */
+}
+
+/* Remove margin between notification items */
+.notification-item {
+    display: flex;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    margin: 0; /* Remove any extra margin around the notification items */
+    padding: 10px; /* Adjust padding to suit your needs */
+}
+
+.notification-title {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+.close-popup {
+    cursor: pointer;
+    float: right;
+}
+
+/* Remove unnecessary margin from the delete button */
+.delete-notification {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 0; /* Remove margin */
+}
+
+.delete-notification:hover {
+    background-color: #c82333; /* Darker red on hover */
+}

@@ -1,0 +1,79 @@
+[
+    {
+        "id": 1,
+        "name": "OFFLINE 1 SUBJECT",
+        "price": 75,
+        "category": "PRIMARY",
+        "image": "GAMBAR DUMMY/PRIMARY SCHOOL OFFLINE.PNG"
+    },
+    {
+        "id": 2,
+        "name": "ONLINE 1 SUBJECT",
+        "price": 65,
+        "category": "PRIMARY",
+        "image": "GAMBAR DUMMY/PRIMARY SCHOOL ONLINE.PNG"
+    },
+    {
+        "id": 3,
+        "name": "OFFLINE 1 SUBJECT",
+        "price": 75,
+        "category": "SECONDARY",
+        "image": "GAMBAR DUMMY/SECONDARY SCHOOL OFFLINE.PNG"
+    },
+    {
+        "id": 4,
+        "name": "ONLINE 1 SUBJECT",
+        "price": 65,
+        "category": "SECONDARY",
+        "image": "GAMBAR DUMMY/SECONDARY SCHOOL ONLINE.PNG"
+    },
+    {
+        "id": 5,
+        "name": "OFFLINE 4 SUBJECT",
+        "price": 250,
+        "category": "PRIMARY",
+        "image": "GAMBAR DUMMY/PRIMARY SCHOOL OFFLINE.PNG"
+    },
+    {
+        "id": 6,
+        "name": "ONLINE 4 SUBJECT",
+        "price": 200,
+        "category": "PRIMARY",
+        "image": "GAMBAR DUMMY/PRIMARY SCHOOL ONLINE.PNG"
+    },
+    {
+        "id": 7,
+        "name": "OFFLINE 4 SUBJECT",
+        "price": 250,
+        "category": "SECONDARY",
+        "image": "GAMBAR DUMMY/SECONDARY SCHOOL OFFLINE.PNG"
+    },
+    {
+        "id": 8,
+        "name": "ONLINE 4 SUBJECT",
+        "price": 200,
+        "category": "SECONDARY",
+        "image": "GAMBAR DUMMY/SECONDARY SCHOOL ONLINE.PNG"
+    },
+    {
+        "id": 9,
+        "name": "ONLINE 1 SUBJECT",
+        "price": 75,
+        "category": "IQRA",
+        "image": "GAMBAR DUMMY/IQRA CLASS ONLINE.PNG"
+    },
+    {
+        "id": 10,
+        "name": "ONLINE 1 SUBJECT",
+        "price": 200,
+        "category": "UPKK",
+        "image": "GAMBAR DUMMY/UPKK CLASS ONLINE.PNG"
+    },
+    {
+        "id": 11,
+        "name": "ONLINE 4 SUBJECT",
+        "price": 200,
+        "category": "UPKK",
+        "image": "GAMBAR DUMMY/UPKK CLASS ONLINE.PNG"
+    }
+]

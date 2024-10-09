@@ -1,0 +1,83 @@
+/* home.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f7fb;
+}
+
+.navbar {
+    background-color: #fff;
+    border-bottom: 1px solid #e0e0e0;
+}
+.navbar .navbar-brand {
+    color: #333;
+    font-weight: bold;
+}
+.container-fluid {
+    max-width: 90%;  /* Increase the container width to fit more content */
+}
+
+.logo img {
+    width: 160px;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff; /* Bootstrap primary color */
+}
+
+a:hover {
+    color: #007bff;
+    text-decoration: none; /* No underline on hover */
+}
+
+.custom-btn {
+    background-color: #f39c12;
+    border-color: #f39c12; /* Optional: To change the border color */
+    color: white; /* Text color */
+    transition: background-color 0.3s ease;
+}
+
+.custom-btn:hover {
+    background-color: #e67e22; /* A slightly darker shade for hover */
+    border-color: #e67e22; /* Optional: To change the border color on hover */
+    color: white; /* Keep text color white on hover */
+}
+.logout a {
+    background-color: #ff6b6b;
+    color: #fff;
+    border: none;
+}
+
+.w-450 {
+    width: 450px;
+}
+
+.vh-100 {
+    min-height: 100vh;
+}
+
+.w-350 {
+    width: 350px;
+}
+
+.shadow {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* No hover effect for header links */
+.navbar-nav .nav-item .nav-link:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+.navbar .navbar-brand {
+    color: #333;
+    font-weight: bold;
+}

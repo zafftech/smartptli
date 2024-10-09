@@ -1,0 +1,255 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Calibri, sans-serif; /* Added the font family */
+}
+
+
+body, .container {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+
+
+
+/* Container for Alignment */
+.container {
+    max-width: 1170px;
+    /* Adjust the max-width as needed */
+    margin: 0 auto;
+    /* Center the container */
+    padding: 0 15px;
+    /* Add some padding for mobile devices */
+}
+
+
+        /* Header Styles */
+        header {
+            background-color: #ffffff;
+            padding: 10px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 100%;
+        }
+
+        .navbar {
+            background: #ffffff;
+            font-family: Calibri, sans-serif;
+        }
+
+        .navdiv {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1170px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        .logo {
+            flex: 1;
+            display: inline-block;
+            /* Keep the logo on the left */
+        }
+
+        .logo img {
+            width: 180px;
+            height: 85px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+            margin: 0;
+            padding: 0;
+            flex: 2;
+            /* Center the navigation links */
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            display: inline-block;
+        }
+
+        nav ul li a {
+            color: #333;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+
+        }
+
+        .auth-buttons {
+            display: flex;
+            gap: 10px;
+            flex: 1;
+            /* Align the buttons to the right */
+            justify-content: flex-end;
+        }
+
+        .border-button {
+            border: none;
+            /*background-color: #d9aa28;*/
+            border-radius: 20px;
+            padding: 10px;
+            width: 70px;
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        .border-button a {
+            color: black;
+            font-weight: lighter;
+            font-size: 15px;
+        }
+
+        .auth-buttons .sign-up {
+            background-color: #f39c12;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        .auth-buttons .log-in {
+            background-color: #2980b9;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+/*This is header*/
+* {
+    text-decoration: none;
+}
+
+.navbar {
+    background: #ffffff;
+    font-family: calibri;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-left: 0; /* Set padding-left to 0 */
+}
+
+
+.logo a {
+    display: inline-block;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+li a {
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 25px;
+}
+
+/* Example hover effect for navbar links */
+.navbar ul li a:hover {
+    color: #ff6600;
+}
+
+/* Hover effect for the buttons */
+.border-button a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hover effect for footer links */
+.footer-col ul li a:hover {
+    color: #ff6600;
+}
+
+button a{
+    background-color:#d9aa28;
+    margin-left:10px;
+    border-radius:20px;
+    padding: 10px;
+    width: 60px;
+    text-align: center;
+}
+
+button a {
+    color: black;
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+/* CSS for the logo */
+.logo {
+    margin-left: 0; /* Ensure no margin on the left */
+    padding-left: 0; /* Ensure no padding on the left */
+}
+
+
+.logo img {
+    width: 180px;
+    height: 85px;
+}
+
+
+li:nth-child(5) {
+    display: inline-block;
+}
+
+.border-button {
+    border: none;
+}
+
+/* Styles for the logout button */
+.logout {
+    margin-right: 30px; /* Shift the logout button 30px to the left */
+}
+
+/* Rest of your existing CSS code */
+
+* {
+    text-decoration: none;
+}
+
+
+/*Responsive*/
+@media(max-width:767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:574px) {
+    .footer-col {
+        width: 190%;
+        margin-bottom: 30px;
+    }
+}
+
+.iconCart {
+    position: relative;
+    /* Set position to relative to position the totalQuantity correctly */
+    display: flex;
+    align-items: center;
+    /* Vertically centers the cart icon and quantity */
+    opacity: 0;
+}
+          

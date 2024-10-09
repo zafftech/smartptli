@@ -1,0 +1,91 @@
+/* Container for all packages */
+.packages-container {
+    display: flex;
+    flex-wrap: wrap; /* Wrap items to next line when no space left */
+    gap: 20px; /* Space between each package */
+    align-items: flex-start; /* Align items at the top */
+    padding: 20px;
+    justify-content: center; /* Center the items horizontally */
+}
+
+/* Individual package card */
+.package-item {
+    background-color: #fff; /* White background for each package */
+    border: 1px solid #ddd; /* Light border */
+    padding: 20px; /* Padding inside the package */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+    text-align: center; /* Center the text */
+    width: 300px; /* Set a fixed width for the packages */
+    transition: transform 0.2s ease; /* Add hover effect */
+}
+
+.package-item:hover {
+    transform: scale(1.05); /* Enlarge slightly on hover */
+}
+
+.slider-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.subjects-list {
+    text-align: center; /* Center the container title and content */
+    margin-bottom: 20px; /* Add some space below the subjects list */
+}
+
+.subjects-list ul {
+    list-style: none;
+    padding: 0;
+    display: inline-flex; /* Change to inline-flex to center as an inline element */
+    flex-wrap: wrap; /* Allow subjects to wrap to the next line if needed */
+    gap: 10px; /* Add space between each subject item */
+    justify-content: center; /* Center items within the container */
+}
+
+.subjects-list li {
+    background: #eff0f5;
+    padding: 8px 15px; /* Increase padding to make subjects more distinct */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow for visual separation */
+}
+
+/* Countdown Styling */
+.countdown {
+    font-size: 18px; /* Font size for countdown */
+    font-weight: bold; /* Bold font */
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    color: black; /* Default color */
+}
+
+.countdown.red {
+    color: red; /* Color when time is up */
+}
+
+.countdown div {
+    margin: 0 10px; /* Space between each time unit */
+}
+
+.countdown span {
+    display: block; /* Block display for time units */
+}
+
+.countdown-label {
+    font-size: 12px; /* Smaller font for labels */
+    font-weight: normal; /* Regular weight for labels */
+}
+
+/* Responsive Layout for smaller devices */
+@media screen and (max-width: 768px) {
+    .packages-container {
+        flex-direction: column; /* Stack the packages vertically */
+        align-items: center; /* Center the items horizontally */
+    }
+
+    .package-item {
+        width: 95%; /* Make package width responsive */
+    }
+}
