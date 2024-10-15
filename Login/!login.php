@@ -15,7 +15,7 @@
             <div class="navdiv">
                 <div class="logo"><img src="ICON.png" alt="Logo"></div>
                 <ul>
-                <li><a href="/MyWebsite 2.0/MAIN INTERFACE/index.html">Home</a></li>
+                <li><a href="/MyWebsite%202.0/index.html">Home</a></li>
                     <li><a href="/MyWebsite 2.0/MAIN INTERFACE/SMARTPTLI(EduLevel).html">Education Level</a></li>
                     <li><a href="/MyWebsite 2.0/MAIN INTERFACE/SMARTPTLI(ClassSchedule).html">Class Schedule</a></li>
                     <li><a href="/MyWebsite 2.0/MAIN INTERFACE/SMARTPTLI(ContactUs).html">Contact Us</a></li>

@@ -1,4 +1,4 @@
 <?php
 session_destroy();
-header("location: ../MAIN INTERFACE/index.html");
+header("Location: /MyWebsite%202.0/index.html");
 ?>

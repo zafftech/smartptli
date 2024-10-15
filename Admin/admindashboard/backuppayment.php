@@ -5,7 +5,7 @@ include("config.php"); // Database connection details
 // Check if the user is an admin (based on the session role)
 if (!isset($_SESSION['role']) || $_SESSION['role'] != 'admin') {
     // If the user is not an admin, redirect them to a different page, such as the homepage
-    header("Location: ../MAIN INTERFACE/index.html");
+    header("Location: /MyWebsite%202.0/index.html"); 
     exit();
 }
 

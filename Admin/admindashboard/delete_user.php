@@ -4,7 +4,7 @@ include($_SERVER['DOCUMENT_ROOT'] . "/MyWebsite 2.0/Login/connect.php");
 
 // Check if the user is an admin
 if ($_SESSION['role'] != 'admin') {
-    header("Location: ../MAIN INTERFACE/index.html");
+    header("Location: /MyWebsite%202.0/index.html");
     exit();
 }
 

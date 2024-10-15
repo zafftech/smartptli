@@ -17,7 +17,7 @@ if (isset($_SESSION['user_id']) && isset($_SESSION['email'])) {
     // Check if the user has the admin role
     if ($user['role'] !== 'admin') {
         // If the user is not an admin, redirect to a different page, like a user dashboard or error page
-        header("Location: /MyWebsite 2.0/MAIN INTERFACE/index.html");
+        header("Location: /MyWebsite%202.0/index.html");
         exit;
     }
 } else {

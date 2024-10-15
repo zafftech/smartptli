@@ -149,6 +149,50 @@ header {
     border-radius: 5px;
 }
 
+/* Hover Effects */
+/* Navigation link hover */
+.nav-links li a:hover {
+    color: #ff6600; /* Change text color */
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+/* Icon Cart Hover */
+.iconCart:hover i {
+    color: #f39c12; /* Change the color of the icon on hover */
+    transition: color 0.3s ease; /* Smooth transition */
+}
+
+/* Total Quantity Hover */
+.totalQuantity:hover {
+    background-color: #2980b9; /* Changes the background color on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Sign Up button hover */
+.auth-buttons .sign-up:hover {
+    background-color: #e67e22; /* Darker shade on hover */
+    transition: background-color 0.3s ease;
+}
+
+/* Log In button hover */
+.auth-buttons .log-in:hover {
+    background-color: #1f6c96; /* Darker shade on hover */
+    transition: background-color 0.3s ease;
+}
+
+/* Border Button Hover */
+.border-button:hover {
+    background-color: #c19224; /* Darker shade */
+    color: white; /* Change text color on hover */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.border-button a:hover {
+    color: white; /* Change the link color inside the button */
+}
+
+
+
 /* Responsive design for footer elements */
 @media (max-width: 767px) {
     .footer-col {

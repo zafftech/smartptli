@@ -5,8 +5,9 @@ include("config.php"); // Include your database connection
 
 // Check if the user is an admin
 if (!isset($_SESSION['role']) || $_SESSION['role'] != 'admin') {
-    header("Location: ../MAIN INTERFACE/index.html"); // Redirect to homepage if not admin
-    exit();
+    header("Location: /MyWebsite%202.0/index.html"); // Redirect to homepage if not admin
+    exit;
+    
 }
 
 // Function to approve a record and transfer it to the approved table
